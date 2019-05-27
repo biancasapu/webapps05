@@ -2,13 +2,13 @@ import React, { Component } from "react";
 
 class Carousel extends Component {
   render() {
+    // TODO: ensure that pictures are auto resized before they get here
     return (
       <div
         id="carouselExampleControls"
         class="carousel slide"
         data-ride="carousel"
       >
-        // TODO: ensure that pictures are auto resized before they get here
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
