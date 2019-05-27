@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-import Header from "./components/header";
+import LostFoundPage from "./components/lostFoundPage";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <LostFoundPage />
       </div>
     );
   }
