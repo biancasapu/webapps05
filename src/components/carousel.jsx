@@ -8,6 +8,7 @@ class Carousel extends Component {
         class="carousel slide"
         data-ride="carousel"
       >
+        // TODO: ensure that pictures are auto resized before they get here
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
