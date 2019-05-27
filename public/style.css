@@ -1,0 +1,12 @@
+ a {
+     color: white;
+ }
+
+ a:hover {
+     color: green;
+ }
+
+ .logo {
+     font-size: 35px;
+     font-family: 'Times New Roman', Times, serif;
+ }
