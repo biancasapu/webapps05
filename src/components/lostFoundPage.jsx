@@ -5,22 +5,22 @@ import { Row, Col } from "reactstrap";
 
 class LostFoundPage extends Component {
   render() {
+    this.state = {
+      notices: [<Notice />, <Notice />, <Notice />, <Notice />]
+    };
+
+    var noticeArr = (
+      <Col md={{ size: 8, offset: 3 }}>
+        {this.state.notices.map(notice => (
+          <Row>{notice}</Row>
+        ))}
+      </Col>
+    );
+
     return (
-      <div>
+      <div style={{ background: "#e6e6ca" }}>
         <Header />
-        <div>
-          <Col md={{ size: 8, offset: 3 }}>
-            <Row>
-              <Notice />
-            </Row>
-            <Row>
-              <Notice />
-            </Row>
-            <Row>
-              <Notice />
-            </Row>
-          </Col>
-        </div>
+        <div>{noticeArr}</div>
       </div>
     );
   }

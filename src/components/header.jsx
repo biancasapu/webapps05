@@ -1,25 +1,29 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import LostFoundPage from "./lostFoundPage";
+import { Navbar, NavItem, NavbarBrand, Nav } from "reactstrap";
 
-const routes = [
-  {
-    path: "/",
-    exact: true,
-    main: () => <h2> Home </h2>
-  },
-  {
-    path: "/Lost-and-Found",
-    main: () => <LostFoundPage />
-  }
-];
+// const routes = [
+//   {
+//     path: "/",
+//     exact: true,
+//     main: () => <h2> Home </h2>
+//   },
+//   {
+//     path: "/Lost-and-Found",
+//     main: () => <LostFoundPage />
+//   }
+// ];
 
 class Header extends Component {
   render() {
     return (
-      <nav class="navbar navbar-dark bg-dark">
-        <h class="navbar-brand logo">Petabase</h>
-        <Router>
+      // <nav class="navbar navbar-dark bg-dark">
+      <Navbar color="dark" dark>
+        <NavbarBrand className="logo" style={{ color: "white" }}>
+          Petabase
+        </NavbarBrand>
+        {/* <Router>w
           <div>
             <Link class="nav-link" to="/">
               Dashboard <span class="sr-only">(current)</span>
@@ -41,8 +45,17 @@ class Header extends Component {
               <Route key={index} path={route.path} exact={route.exact} />
             ))}
           </div>
-        </Router>
-      </nav>
+        </Router> */}
+        <Nav className="ml-auto" navbar>
+          <NavItem
+            style={{
+              color: "white"
+            }}
+          >
+            Lost & Found
+          </NavItem>
+        </Nav>
+      </Navbar>
     );
   }
 }
