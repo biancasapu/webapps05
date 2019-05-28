@@ -1,0 +1,21 @@
+ a {
+     color: white;
+ }
+
+ a:hover {
+     color: green;
+ }
+
+ .logo {
+     font-size: 35px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+ .cardPic {
+     width: 100%;
+     border-radius: 10%;
+ }
+
+ .cardDescription {
+     font-size: 20px;
+ }
